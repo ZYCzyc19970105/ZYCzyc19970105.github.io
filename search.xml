@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[jiangtao]]></title>
+    <url>%2F2019%2F09%2F26%2Fjiangtao%2F</url>
+    <content type="text"><![CDATA[你好世界今天天气真的好]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[阅读清单]]></title>
     <url>%2F2019%2F09%2F26%2Fread-books%2F</url>
     <content type="text"><![CDATA[以下可能是今明后年的阅读计划,不知道自己的懒癌能否治疗….排序不分先后,随缘看 深入浅出设计模式 Head First Java HTTP权威指南 Java编程思想 Java并发编程实战 Java核心技术 卷I Java核心技术 卷II Redis设计与实现 Spring Boot实战 Spring技术内幕 - 深入解析Spring架构与设计原理 Spring实战 深入理解Java虚拟机：JVM高级特性与最佳实践 图解HTTP]]></content>
