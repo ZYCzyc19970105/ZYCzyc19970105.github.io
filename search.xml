@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[1.两数之和]]></title>
+    <url>%2F2019%2F09%2F30%2F1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C%2F</url>
+    <content type="text"><![CDATA[给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下 标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。 示例: 1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1] 解: 123456789101112131415class Solution &#123; public int[] twoSum(int[] nums, int target)&#123; Map&lt;Integer, Integer&gt; hashMap = new HashMap&lt;&gt;(); for (int i = 0; i &lt; nums.length; i++) &#123; hashMap.put(nums[i], i); &#125; for (int i = 0; i &lt; nums.length; i++) &#123; int a = target - nums[i]; if (hashMap.containsKey(a) &amp;&amp; hashMap.get(a) != i) &#123; return new int[]&#123;i, hashMap.get(a)&#125;; &#125; &#125; return null; &#125;&#125;]]></content>
+      <categories>
+        <category>leetcode</category>
+      </categories>
+      <tags>
+        <tag>leetcode</tag>
+        <tag>算法</tag>
+        <tag>简单</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[spring boot 中使用mybatis整合druid数据库连接池]]></title>
     <url>%2F2019%2F09%2F29%2Fspring-boot-druid%2F</url>
     <content type="text"><![CDATA[数据库连接池:spring boot默认使用hikari,今天介绍Alibaba提供的开源数据库连接池druid.]]></content>
