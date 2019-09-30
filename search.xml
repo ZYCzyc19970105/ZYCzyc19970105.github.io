@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[spring boot 中使用mybatis整合druid数据库连接池]]></title>
     <url>%2F2019%2F09%2F29%2Fspring-boot-druid%2F</url>
-    <content type="text"><![CDATA[1234@RequestMapping("/queryStudent")public Student queryStudentBySno(String sno)&#123; return this.studentService.queryStudentBySno(sno);&#125;]]></content>
+    <content type="text"><![CDATA[数据库连接池:spring boot默认使用hikari,今天介绍Alibaba提供的开源数据库连接池druid.]]></content>
       <categories>
         <category>Spring Boot</category>
       </categories>
