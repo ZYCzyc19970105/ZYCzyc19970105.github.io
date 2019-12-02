@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[backup-mysql]]></title>
+    <url>%2F2019%2F12%2F02%2Fbackup-mysql%2F</url>
+    <content type="text"><![CDATA[​ 今天要给我们的数据库做备份,防止数据丢失造成损失,因为我们用的数据库采用的是MySQL,所以备份操作用MySQL自带的MySQL dump,话不多说开始吧. ​ 首先写一段sh脚本用来做备份操作. 12345678910111213141516#!/bin/bash# 用来备份钉钉机器人和小创大脑数据库# dingding库全量备份,包含小创大脑配置的数据和表结构# robot库全量备份,包含机器人配置的数据和表结构BCK_DIR=&quot;/home/DingTalk/mysql/backup&quot;DATE=`date +%F`user=&quot;user&quot;password=&quot;password&quot;mkdir -p $BCK_DIR/dingdingmkdir -p $BCK_DIR/robot#全量备份dingding和robot库/home/mysql/mysql/bin/mysqldump --opt --single-transaction -R - u$user -p$password --master-data=2 dingding | gzip --fast &gt; $BCK_DIR/dingding/dingding_$DATE.sql.gz/home/mysql/mysql/bin/mysqldump --opt --single-transaction -R - u$user -p$password --master-data=2 robot | gzip --fast &gt; $BCK_DIR/robot/robot_$DATE.sql.gz ​ 脚本我是用notepad++写的,写的时候注意文档格式转换为Unix编码. ​ 考虑到白天会有对数据库进行操作的任务,所以定时任务为每天零点零分执行一次备份.linux服务器上采用crontab进行定时任务. 编辑定时任务 123crontab -evim0 0 * * * /home/DingTalk/mysql/DingTalk-mysql-backup.sh(此处换成你自己的脚本存放位置和名字) 查看定时任务 1crontab -l 如果列表中有新添加的脚本说明成功.可以在凌晨确认一哈脚本是否正确运行!指定文件夹是否有备份的sql压缩包.]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
+      <tags>
+        <tag>mysqldump</tag>
+        <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[1.两数之和]]></title>
     <url>%2F2019%2F09%2F30%2F1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C%2F</url>
     <content type="text"><![CDATA[给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下 标。 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。 示例: 1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1] 解: 123456789101112131415class Solution &#123; public int[] twoSum(int[] nums, int target)&#123; Map&lt;Integer, Integer&gt; hashMap = new HashMap&lt;&gt;(); for (int i = 0; i &lt; nums.length; i++) &#123; hashMap.put(nums[i], i); &#125; for (int i = 0; i &lt; nums.length; i++) &#123; int a = target - nums[i]; if (hashMap.containsKey(a) &amp;&amp; hashMap.get(a) != i) &#123; return new int[]&#123;i, hashMap.get(a)&#125;; &#125; &#125; return null; &#125;&#125;]]></content>
