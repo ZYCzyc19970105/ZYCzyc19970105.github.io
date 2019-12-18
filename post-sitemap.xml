@@ -9,15 +9,7 @@
 
     <url>
         <loc>https://ZYCzyc19970105.github.io/2019/12/18/7-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/</loc>
-        <lastmod>2019-12-18T09:21:02.420Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ZYCzyc19970105.github.io/2019/09/29/spring-boot-druid/</loc>
-        <lastmod>2019-12-18T08:46:34.797Z</lastmod>
+        <lastmod>2019-12-18T09:30:00.802Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,6 +17,14 @@
 
     <url>
         <loc>https://ZYCzyc19970105.github.io/2019/09/26/read-books/</loc>
+        <lastmod>2019-12-18T08:46:34.797Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/2019/09/29/spring-boot-druid/</loc>
         <lastmod>2019-12-18T08:46:34.797Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
