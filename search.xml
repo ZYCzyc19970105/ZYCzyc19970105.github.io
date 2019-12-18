@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F12%2F18%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[System.out.println(“Hello World!”);]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>输出</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[backup-mysql]]></title>
     <url>%2F2019%2F12%2F02%2Fbackup-mysql%2F</url>
     <content type="text"><![CDATA[​ 今天要给我们的数据库做备份,防止数据丢失造成损失,因为我们用的数据库采用的是MySQL,所以备份操作用MySQL自带的MySQL dump,话不多说开始吧. ​ 首先写一段sh脚本用来做备份操作. 12345678910111213141516#!/bin/bash# 用来备份钉钉机器人和小创大脑数据库# dingding库全量备份,包含小创大脑配置的数据和表结构# robot库全量备份,包含机器人配置的数据和表结构BCK_DIR=&quot;/home/DingTalk/mysql/backup&quot;DATE=`date +%F`user=&quot;user&quot;password=&quot;password&quot;mkdir -p $BCK_DIR/dingdingmkdir -p $BCK_DIR/robot#全量备份dingding和robot库/home/mysql/mysql/bin/mysqldump --opt --single-transaction -R - u$user -p$password --master-data=2 dingding | gzip --fast &gt; $BCK_DIR/dingding/dingding_$DATE.sql.gz/home/mysql/mysql/bin/mysqldump --opt --single-transaction -R - u$user -p$password --master-data=2 robot | gzip --fast &gt; $BCK_DIR/robot/robot_$DATE.sql.gz ​ 脚本我是用notepad++写的,写的时候注意文档格式转换为Unix编码. ​ 考虑到白天会有对数据库进行操作的任务,所以定时任务为每天零点零分执行一次备份.linux服务器上采用crontab进行定时任务. 编辑定时任务 123crontab -evim0 0 * * * /home/DingTalk/mysql/DingTalk-mysql-backup.sh(此处换成你自己的脚本存放位置和名字) 查看定时任务 1crontab -l 如果列表中有新添加的脚本说明成功.可以在凌晨确认一哈脚本是否正确运行!指定文件夹是否有备份的sql压缩包.]]></content>
@@ -46,17 +57,6 @@
       <tags>
         <tag>Java</tag>
         <tag>书籍</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F08%2F29%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[System.out.println(“Hello World!”);]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>输出</tag>
       </tags>
   </entry>
 </search>

@@ -8,24 +8,8 @@
     </url>
 
     <url>
-        <loc>https://ZYCzyc19970105.github.io/2019/12/02/backup-mysql/</loc>
-        <lastmod>2019-12-02T09:31:05.494Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://ZYCzyc19970105.github.io/2019/09/26/read-books/</loc>
-        <lastmod>2019-10-15T09:41:04.096Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://ZYCzyc19970105.github.io/2019/09/30/1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</loc>
-        <lastmod>2019-10-15T09:40:44.364Z</lastmod>
+        <lastmod>2019-12-18T08:46:34.797Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,15 +17,31 @@
 
     <url>
         <loc>https://ZYCzyc19970105.github.io/2019/09/29/spring-boot-druid/</loc>
-        <lastmod>2019-09-30T07:26:42.595Z</lastmod>
+        <lastmod>2019-12-18T08:46:34.797Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://ZYCzyc19970105.github.io/2019/08/29/hello-world/</loc>
-        <lastmod>2019-09-26T06:15:30.088Z</lastmod>
+        <loc>https://ZYCzyc19970105.github.io/2019/09/30/1-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</loc>
+        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/2019/12/02/backup-mysql/</loc>
+        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/2019/12/18/hello-world/</loc>
+        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
