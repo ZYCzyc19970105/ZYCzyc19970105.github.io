@@ -3,8 +3,22 @@
 
 
     <url>
-        <loc>https://ZYCzyc19970105.github.io/tags/Spring-Boot/</loc>
-        <lastmod>2019-12-18T08:46:34.797Z</lastmod>
+        <loc>https://ZYCzyc19970105.github.io/tags/%E7%AE%80%E5%8D%95/</loc>
+        <lastmod>2019-12-18T09:21:02.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+        <lastmod>2019-12-18T09:21:02.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/tags/leetcode/</loc>
+        <lastmod>2019-12-18T09:21:02.420Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -18,6 +32,13 @@
 
     <url>
         <loc>https://ZYCzyc19970105.github.io/tags/Java/</loc>
+        <lastmod>2019-12-18T08:46:34.797Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/tags/Spring-Boot/</loc>
         <lastmod>2019-12-18T08:46:34.797Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -39,27 +60,6 @@
 
     <url>
         <loc>https://ZYCzyc19970105.github.io/tags/mysqldump/</loc>
-        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ZYCzyc19970105.github.io/tags/%E7%AE%80%E5%8D%95/</loc>
-        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ZYCzyc19970105.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
-        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://ZYCzyc19970105.github.io/tags/leetcode/</loc>
         <lastmod>2019-12-18T08:46:34.796Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
