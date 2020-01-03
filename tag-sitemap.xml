@@ -3,6 +3,20 @@
 
 
     <url>
+        <loc>https://ZYCzyc19970105.github.io/tags/tomcat/</loc>
+        <lastmod>2020-01-03T07:10:51.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/tags/jsp/</loc>
+        <lastmod>2020-01-03T07:10:51.285Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://ZYCzyc19970105.github.io/tags/%E7%AE%80%E5%8D%95/</loc>
         <lastmod>2019-12-18T09:30:00.802Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,13 +59,6 @@
     </url>
 
     <url>
-        <loc>https://ZYCzyc19970105.github.io/tags/%E8%BE%93%E5%87%BA/</loc>
-        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://ZYCzyc19970105.github.io/tags/%E5%A4%87%E4%BB%BD/</loc>
         <lastmod>2019-12-18T08:46:34.796Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -60,6 +67,13 @@
 
     <url>
         <loc>https://ZYCzyc19970105.github.io/tags/mysqldump/</loc>
+        <lastmod>2019-12-18T08:46:34.796Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ZYCzyc19970105.github.io/tags/%E8%BE%93%E5%87%BA/</loc>
         <lastmod>2019-12-18T08:46:34.796Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
