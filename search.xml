@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[OneLink]]></title>
+    <url>%2F2020%2F08%2F10%2FOneLink%2F</url>
+    <content type="text"><![CDATA[测试]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2020%2F03%2F23%2FHttpURLConnection%E6%8E%A5%E5%8F%A3%E8%B0%83%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[平常都是使用postman联调本程序接口。两个系统之间接口的联调如何用代码实现呢？1HttpURLConnection 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162BufferedWriter writer = null;BufferedReader reader = null;HttpURLConnection connect = null;JSONObject json = new JSONObject();try&#123; //此处封装所需要的参数,以requestbody举例 json.put("XXX","XXX"); json.put("XXX","XXX"); String jsonStr = json.toJsonString(); URL url = new URL("此处填写接口地址"); connect = (HttpURLConnection)url.openConnection(); connect.setDoInput(true); connect.setDoOutput(true); connect.setRequestMethod("POST"); connect.addRequestProperty("Content-Type", "application/json"); connect.connect(); OutputStream out = connect.getOutputStream(); writer = new BufferedWriter(new OutputStreamWriter(out)); //拼接requestbody内参数 writer.writer("[\n" + " &#123;\n" + " \"XX\": \""+json.getString("XX")+"\",\n" + " \"XX\": \""+json.getString("XX")+"\"\n" + " &#125;\n" + "]"); /** * writer.writer("["+jsonStr+"]"); **/ writer.flush(); reader = new BufferedReader(new InputStreamReader(connect.getInputStream())); StringBuilder response = new StringBuilder(); String line; while ((line = reader.readLine()) != null) &#123; response.append(line); &#125; String str = response.toString(); JSONObject info = JSON.parseObject(str); return info;&#125;catch(Exception e)&#123; e.printStackTrace();&#125;finally&#123; if(writer != null)&#123; try&#123; writer.close(); &#125;catch(Exception e)&#123; e.printStackTrace(); &#125; &#125; if(reader != null)&#123; try&#123; reader.close(); &#125;catch(Exception e)&#123; e.printStackTrace(); &#125; &#125; if(connect != null)&#123; connect.disconnect(); &#125; return null;&#125;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Linux:启动tomact，jsp报错classNotFound]]></title>
     <url>%2F2020%2F01%2F03%2FLinux-%E5%90%AF%E5%8A%A8tomact%EF%BC%8Cjsp%E6%8A%A5%E9%94%99classNotFound%2F</url>
     <content type="text"><![CDATA[今天重启服务器，项目的前端页面JSP全部报错404.找了一下错误，原来之前发包的时候用root权限发了一次包，work文件夹权限变更，后来用普通权限发包的时候无权限向work文件夹存文件，导致页面404. 解决方法：清空work文件夹。重新发包。]]></content>
